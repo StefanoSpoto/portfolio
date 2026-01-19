@@ -52,7 +52,7 @@ export const games: Game[] = [
   {
     name: "OathBind",
     description: "You play as a priestess ascending a mystical tower, building your path floor by floor using magical glyphs.",
-    genres: ["Top-down", "Physics"],
+    genres: ["Puzzle", "Strategy"],
     platforms: [Platform.Windows],
     engine: GameEngine.Unreal,
     links: [
