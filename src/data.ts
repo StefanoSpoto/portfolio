@@ -8,7 +8,7 @@ export const PersonalInfo: AboutMeData = {
   "Thanks to a fortuitous meeting I began to study game development and up to now I have made many games that helped me develop many skills. " +
   "Now I'm looking to join a company where I can refine those skills and most importantly make great games.",
   image: `${process.env.PUBLIC_URL}/images/Profile.jpg`,
-  cvUri: `${process.env.PUBLIC_URL}/files/CV_Stefano_Spoto.pdf.pdf`,
+  cvUri: `${process.env.PUBLIC_URL}/files/CV_Stefano_Spoto.pdf`,
   links: {
     github: "https://github.com/StefanoSpoto",
     itchIO: "https://zio-stelvio.itch.io/",
@@ -17,6 +17,24 @@ export const PersonalInfo: AboutMeData = {
 };
 
 export const games: Game[] = [
+  {
+    name: "Quest System",
+    description: "A tool made entirely in C++ to help developers make quests and events for their games. It also includes a dedicated save system. It's intended to be used in both blueprints and C++.",
+    genres: ["Tool"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unreal,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/StefanoSpoto/Quest-System" },
+    ],
+    media: [
+      { source: "/images/games/Quest-System/Screenshot_1.png", type: MediaType.Image },
+      { source: "https://www.youtube.com/watch?v=AcJ_ozKUyt0", type: MediaType.YouTube },
+      { source: "/images/games/Quest-System/Screenshot_2.png", type: MediaType.Image },
+      { source: "/images/games/Quest-System/Screenshot_3.png", type: MediaType.Image },
+      { source: "/images/games/Quest-System/Screenshot_4.png", type: MediaType.Image },
+      { source: "/images/games/Quest-System/Screenshot_5.png", type: MediaType.Image },
+    ],
+  },
   {
     name: "Mushroom Trip",
     description: "After a bad trip, explore a psychedelic world like a mushroom and break the musical curse in a precision roguelike platformer.",
